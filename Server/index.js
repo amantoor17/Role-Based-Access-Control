@@ -5,7 +5,7 @@ const app = express();
 
 // Allow requests from your frontend
 app.use(cors({
-    origin: "https://role-based-access-control-red.vercel.app/", // Allow this specific origin
+    origin: "https://role-based-access-control-navy.vercel.app/", // Allow this specific origin
     methods: "GET,POST,PUT,DELETE", // Specify allowed methods
     credentials: true // Include credentials if needed (e.g., cookies)
 }));
