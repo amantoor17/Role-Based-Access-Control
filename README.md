@@ -39,7 +39,7 @@ After installing the dependencies, start the development server by running:
 
 **Use below URL to connect with Database or you can use your own MongoDb URL**
 
-- MONGODB_URL = "mongodb+srv://amantoordpps:kO9R4KR8STokK9V8@cluster0.a8ifn.mongodb.net/VRV-Security" 
+- MONGODB_URL = "USE_YOUR_MONGO_DB_URL" 
 
 - JWT_SECRET = tdoubleor
 
