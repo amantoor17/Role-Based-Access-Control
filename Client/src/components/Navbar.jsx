@@ -11,8 +11,6 @@ const Navbar = (props) => {
   const logoutHandler = () => {
     // Clear token from localStorage or cookies
     localStorage.removeItem("token");
-    // Optionally clear other session data (if needed)
-    // document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
 
     // Update state to reflect logged out status
     setIsLoggedIn(false);
@@ -27,7 +25,7 @@ const Navbar = (props) => {
   return (
     <div className='flex justify-between items-center w-11/12 max-w-[1160px] py-4 mx-auto'>
       <Link className='text-white text-3xl '> 
-        VRV Security
+        Security System
       </Link>
 
       {/* Login - SignUp - LogOut */}
