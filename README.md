@@ -1,6 +1,6 @@
 # **Created Role-Based Access Control (RBAC) UI as a Backend Assignment for VRV Security**
 
-**You can check out UI of the project here -** https://drive.google.com/file/d/17YkyK_RM7iHwJ-fYioERk2_ez-a4aEwe/view?usp=sharing 
+**You can check out the project here -** https://role-based-access-control-sigma.vercel.app/
 
 ## **Features**
 
