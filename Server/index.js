@@ -10,7 +10,7 @@ const app = express();
 //     credentials: true // Include credentials if needed (e.g., cookies)
 // }));
 
-const allowedOrigins = ["http://localhost:3000", "http://localhost:5173"];
+const allowedOrigins = ["http://localhost:3000", "http://localhost:5173","https://role-based-access-control-sigma.vercel.app"];
 
 app.use(cors({
   origin: function (origin, callback) {
@@ -26,7 +26,7 @@ app.use(cors({
 
 
 require('dotenv').config();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
