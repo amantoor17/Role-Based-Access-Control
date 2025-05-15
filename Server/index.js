@@ -4,25 +4,25 @@ const cors = require("cors");
 const app = express();
 
 // Allow requests from your frontend
-// app.use(cors({
-//     origin: "http://localhost:3000", // Allow this specific origin
-//     methods: "GET,POST,PUT,DELETE", // Specify allowed methods
-//     credentials: true // Include credentials if needed (e.g., cookies)
-// }));
-
-const allowedOrigins = ["http://localhost:3000", "http://localhost:5173","https://role-based-access-control-sigma.vercel.app"];
-
 app.use(cors({
-  origin: function (origin, callback) {
-    if (allowedOrigins.includes(origin) || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+    origin: "https://role-based-access-control-sigma.vercel.app", // Allow this specific origin
+    methods: "GET,POST,PUT,DELETE", // Specify allowed methods
+    credentials: true // Include credentials if needed (e.g., cookies)
 }));
+
+// const allowedOrigins = ["http://localhost:3000", "http://localhost:5173","https://role-based-access-control-sigma.vercel.app"];
+
+// app.use(cors({
+//   origin: function (origin, callback) {
+//     if (allowedOrigins.includes(origin) || !origin) {
+//       callback(null, true);
+//     } else {
+//       callback(new Error("Not allowed by CORS"));
+//     }
+//   },
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+//   allowedHeaders: ["Content-Type", "Authorization"],
+// }));
 
 
 require('dotenv').config();
